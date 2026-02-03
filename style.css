@@ -1,0 +1,84 @@
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+}
+
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background: black;
+  padding: 15px;
+  z-index: 1000;
+}
+
+.navbar nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+}
+
+.navbar nav a:hover {
+  color: plum;
+}
+
+
+.parallax {
+  height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bg1 {
+  background-image: url("images/bg1.jpg");
+}
+
+.bg2 {
+  background-image: url("images/bg2.jpg");
+}
+
+.bg3 {
+  background-image: url("images/bg3.jpg");
+}
+
+
+.content {
+  color: white;
+  text-align: center;
+  background: rgba(0,0,0,0.5);
+  padding: 20px;
+}
+
+
+.section {
+  padding: 80px 20px;
+  text-align: center;
+  background: #f4f4f4;
+}
+
+
+footer {
+  background: black;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+
+@media (max-width: 768px) {
+  .navbar nav a {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .parallax {
+    background-attachment: scroll;
+  }
+}
