@@ -1,121 +1,186 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
+<title>Merveille Ihozo | Parallax Portfolio</title>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>Parallax Website Clone</title>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+<!-- YOUR EXTERNAL CSS -->
 <link rel="stylesheet" href="style.css">
 
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
 </head>
-
 <body>
 
+<!-- Navbar -->
+<div class="w3-top">
+<div class="w3-bar" id="myNavbar">
 
-<header class="navbar">
-  <nav>
-    <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#portfolio">Portfolio</a>
-    <a href="#contact">Contact</a>
-  </nav>
-</header>
+<a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right"
+href="javascript:void(0);" onclick="toggleFunction()">
+<i class="fa fa-bars"></i>
+</a>
 
+<a href="#home" class="w3-bar-item w3-button">HOME</a>
+<a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
+<a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PORTFOLIO</a>
+<a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
 
-<section id="home" class="parallax bg1">
-  <h1>My Parallax Website</h1>
-</section>
-<section class="split" id="about">
-  <h2>About Me</h2>>
-  <div class="split__media">
-    <img src="images/bg3.jpeg" width="150" height="220" class="rounded">
-  </div>
-  <div class="split__content">
-    <h2>About Me</h2>
-    <p>Hello and welcome to my parallax website.
+</div>
+</div>
 
-My name is Merveille Ihozo, and I am passionate about project management, technology, and creative digital solutions.
+<!-- Parallax 1 -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+<div class="w3-display-middle">
+<span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide">
+MERVEILLE PORTFOLIO
+</span>
+</div>
+</div>
 
-This website demonstrates my understanding of modern web design, including semantic HTML structure, responsive layout, and parallax scrolling effects.
+<!-- About Section -->
+<div class="w3-content w3-container w3-padding-64" id="about">
 
-Through this project, I explored how to create visually engaging websites using advanced CSS styling techniques.
+<h3 class="w3-center">ABOUT ME</h3>
+<p class="w3-center"><em>Frontend learner | Project Management student</em></p>
 
-Thank you for visiting my website and taking the time to explore my work.</p> 
-    <a class="btn" href="#">Call to action</a>
-  </div>
+<p>
+I am Merveille Ihozo, a final-year Project Management student and frontend development learner at SheCanCode. 
+This website demonstrates my understanding of semantic HTML, advanced CSS styling, and the parallax scrolling effect.
+</p>
 
-</section>
+<div class="w3-row">
 
+<div class="w3-col m6 w3-center w3-padding-large">
+<p><b><i class="fa fa-user w3-margin-right"></i>Merveille Ihozo</b></p>
+<img src="images/profile.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off">
+</div>
 
-<section class="parallax bg2">
-  <h1>Beautiful Scrolling Effect</h1>
-</section>
+<div class="w3-col m6 w3-hide-small w3-padding-large">
+<p>
+I enjoy building responsive websites that combine good design and user experience. 
+My skills include HTML, CSS, frontend development and project management.
+</p>
+</div>
 
+</div>
 
-<section id="portfolio" class="content">
+<p class="w3-large w3-center w3-padding-16">My Skills:</p>
 
-<h2>Portfolio</h2>
+<p class="w3-wide"><i class="fa fa-code"></i>HTML & CSS</p>
+<div class="w3-light-grey">
+<div class="w3-container w3-dark-grey w3-center" style="width:90%">90%</div>
+</div>
 
+<p class="w3-wide"><i class="fa fa-laptop"></i>Frontend Development</p>
+<div class="w3-light-grey">
+<div class="w3-container w3-dark-grey w3-center" style="width:85%">85%</div>
+</div>
 
-<video controls width="400">
-  <source src="video.mp4" type="video/mp4">
-</video>
+<p class="w3-wide"><i class="fa fa-tasks"></i>Project Management</p>
+<div class="w3-light-grey">
+<div class="w3-container w3-dark-grey w3-center" style="width:75%">75%</div>
+</div>
 
+</div>
 
-<table>
-<tr>
-<th>Project</th>
-<th>Technology</th>
-</tr>
+<!-- Stats -->
+<div class="w3-row w3-center w3-dark-grey w3-padding-16">
 
-<tr>
-<td>Website</td>
-<td>HTML & CSS</td>
-</tr>
+<div class="w3-quarter w3-section">
+<span class="w3-xlarge">5+</span><br> Certifications
+</div>
 
-<tr>
-<td>Portfolio</td>
-<td>Frontend</td>
-</tr>
+<div class="w3-quarter w3-section">
+<span class="w3-xlarge">10+</span><br> Projects
+</div>
 
-</table>
+<div class="w3-quarter w3-section">
+<span class="w3-xlarge">Learning</span><br> Achievements
+</div>
 
-</section>
+<div class="w3-quarter w3-section">
+<span class="w3-xlarge">Team</span><br> Collaboration
+</div>
 
+</div>
 
-<section class="parallax bg3">
-  <h1>Contact Me</h1>
-</section>
+<!-- Parallax 2 -->
+<div class="bgimg-2 w3-display-container w3-opacity-min">
+<div class="w3-display-middle">
+<span class="w3-xxlarge w3-text-white w3-wide">PORTFOLIO</span>
+</div>
+</div>
 
-<section id="contact" class="content">
+<!-- Portfolio -->
+<div class="w3-content w3-container w3-padding-64" id="portfolio">
 
-<h2>Contact</h2>
+<h3 class="w3-center">MY WORK</h3>
+<p class="w3-center"><em>Frontend practice projects</em></p>
 
+<div class="w3-row-padding w3-center">
+
+<div class="w3-col m3">
+<img src="images/p4.jfif" class="w3-hover-opacity">
+</div>
+
+<div class="w3-col m3">
+<img src="images/p3.jfif" class="w3-hover-opacity">
+</div>
+
+<div class="w3-col m3">
+<img src="images/p2.jfif" class="w3-hover-opacity">
+</div>
+
+<div class="w3-col m3">
+<img src="images/p1.jfif" class="w3-hover-opacity">
+</div>
+
+</div>
+
+</div>
+
+<!-- Parallax 3 -->
+<div class="bgimg-3 w3-display-container w3-opacity-min">
+<div class="w3-display-middle">
+<span class="w3-xxlarge w3-text-white w3-wide">CONTACT</span>
+</div>
+</div>
+
+<!-- Contact -->
+<div class="w3-content w3-container w3-padding-64" id="contact">
+
+<h3 class="w3-center">CONTACT ME</h3>
+
+<p>Kigali, Rwanda</p>
+<p>Phone: +250 791928881</p>
 <p>Email: ihozomerveille@gmail.com</p>
-<p>Phone: +250 79192881</p> 
-<P> Address: You can check my location on the map below!</P>
 
-
-<iframe
-width="100%"
-height="300"
-style="border:0"
-loading="lazy"
-allowfullscreen
+<iframe width="100%" height="300"
 src="https://www.google.com/maps?q=Kigali&output=embed">
 </iframe>
 
-</section>
+</div>
 
-<footer>
-<p>© 2026 My Parallax Website</p>
+<footer class="w3-center w3-black w3-padding-64">
+<p>Designed by Merveille Ihozo</p>
 </footer>
+
+<script>
+
+function toggleFunction() {
+var x = document.getElementById("navDemo");
+if (x.className.indexOf("w3-show") == -1) {
+x.className += " w3-show";
+} else {
+x.className = x.className.replace(" w3-show", "");
+}
+}
+
+</script>
 
 </body>
 </html>
