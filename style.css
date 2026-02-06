@@ -1,54 +1,121 @@
-body,h1,h2,h3,h4,h5,h6 {
-font-family: "Lato", sans-serif;
+body{
+font-family:Lato, sans-serif;
+margin:0;
 }
 
-body, html {
-height: 100%;
-color: #777;
-line-height: 1.8;
+.top{
+position:fixed;
+width:100%;
+background:white;
+z-index:10;
 }
 
-/* PARALLAX EFFECT */
-
-.bgimg-1, .bgimg-2, .bgimg-3 {
-background-attachment: fixed;
-background-position: center;
-background-repeat: no-repeat;
-background-size: cover;
+.navbar{
+display:flex;
+gap:20px;
+padding:15px;
 }
 
-.bgimg-1 {
-background-image: url("images/bg1.jpg");
-min-height: 100%;
+.navbar a{
+text-decoration:none;
+color:black;
 }
 
-.bgimg-2 {
-background-image: url("images/bg2.jpg");
-min-height: 400px;
+.content{
+max-width:1000px;
+margin:auto;
 }
 
-.bgimg-3 {
-background-image: url("images/bg3.jpg");
-min-height: 400px;
+.container{
+padding:64px 20px;
 }
 
-.w3-wide {
-letter-spacing: 10px;
+.center{
+text-align:center;
 }
 
-.w3-hover-opacity {
-cursor: pointer;
+.row{
+display:flex;
+gap:20px;
+flex-wrap:wrap;
 }
 
-/* RESPONSIVE */
-
-@media only screen and (max-device-width: 1600px) {
-
-.bgimg-1,
-.bgimg-2,
-.bgimg-3 {
-background-attachment: scroll;
-min-height: 400px;
+.col{
+flex:1;
 }
 
+.bar{
+background:#eee;
+margin-bottom:15px;
+}
+
+.fill{
+background:#333;
+color:white;
+text-align:center;
+}
+
+.stats{
+display:flex;
+justify-content:space-around;
+background:#333;
+color:white;
+padding:20px;
+text-align:center;
+}
+
+.parallax{
+background-attachment:fixed;
+background-position:center;
+background-repeat:no-repeat;
+background-size:cover;
+min-height:400px;
+position:relative;
+}
+
+.bgimg-1{
+background-image:url("images/bg1.jpg");
+}
+
+.bgimg-2{
+background-image:url("images/bg1.jpg");
+}
+
+.bgimg-3{
+background-image:url("images/bg1.jpg");
+}
+
+.middle{
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+}
+
+.title-box{
+background:black;
+color:white;
+padding:20px;
+}
+
+.title-white{
+color:white;
+font-size:30px;
+}
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:10px;
+}
+
+.gallery img{
+width:100%;
+}
+
+footer{
+background:pink;
+color:black;
+padding:16px;
+text-align:center;
 }
